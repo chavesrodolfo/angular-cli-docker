@@ -1,7 +1,7 @@
 # This is a 2-phased Dockerfile
 # 1st phase builds the project
 # 2nd phase creates the distributable Docker-image
-FROM node:carbon-slim
+FROM node:carbon-slim as build-env
 LABEL version="1.0"
 LABEL maintainer="Juha Ristolainen <juha.ristolainen@iki.fi>"
 LABEL author="Juha Ristolainen <juha.ristolainen@iki.fi>"
